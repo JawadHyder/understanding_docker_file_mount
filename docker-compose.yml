@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  myapp:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      MY_ENV_VAR: some_value # Env vars are passed to the container
+    volumes:
+      - ./:/root/dir
+      - ./data_dir:/root/data

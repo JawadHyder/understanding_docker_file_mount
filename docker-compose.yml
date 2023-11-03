@@ -10,3 +10,7 @@ services:
     volumes:
       - ./:/root/dir
       - ./data_dir:/root/data
+      - a_temp_volume:/root/mounted_to_volume
+
+volumes:
+  a_temp_volume:
